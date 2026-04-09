@@ -1,9 +1,12 @@
 {
-  "name": "@ai-security-scanner/cli",
+  "name": "@phoenixaihub/secscanner",
   "version": "0.1.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
-    "secscanner": "bin/secscanner.js"
+    "secscanner": "./dist/cli.js"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +15,7 @@
     "clean": "rm -rf dist .tsbuildinfo"
   },
   "dependencies": {
-    "@ai-security-scanner/core": "*"
+    "@phoenixaihub/security-scanner-core": "*"
   },
   "devDependencies": {
     "@types/node": "^20.19.39",

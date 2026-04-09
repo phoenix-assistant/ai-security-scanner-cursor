@@ -1,5 +1,5 @@
 {
-  "name": "ai-security-scanner",
+  "name": "@phoenixaihub/vscode-security-scanner",
   "displayName": "AI Security Scanner",
   "description": "AI-native vulnerability scanner — finds bugs, explains exploits, and fixes code inline.",
   "version": "0.1.0",
@@ -29,7 +29,7 @@
     "package": "npx @vscode/vsce package"
   },
   "dependencies": {
-    "@ai-security-scanner/core": "*"
+    "@phoenixaihub/security-scanner-core": "*"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",

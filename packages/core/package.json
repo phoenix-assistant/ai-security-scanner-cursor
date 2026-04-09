@@ -1,7 +1,10 @@
 {
-  "name": "@ai-security-scanner/core",
+  "name": "@phoenixaihub/security-scanner-core",
   "version": "0.1.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
