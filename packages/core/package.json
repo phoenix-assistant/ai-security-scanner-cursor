@@ -1,5 +1,5 @@
 {
-  "name": "@phoenixaihub/security-scanner-core",
+  "name": "@ai-security-scanner/core",
   "version": "0.1.0",
   "type": "module",
   "publishConfig": {

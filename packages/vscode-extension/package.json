@@ -29,7 +29,7 @@
     "package": "npx @vscode/vsce package"
   },
   "dependencies": {
-    "@phoenixaihub/security-scanner-core": "*"
+    "@ai-security-scanner/core": "*"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",

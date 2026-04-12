@@ -15,7 +15,7 @@
     "clean": "rm -rf dist .tsbuildinfo"
   },
   "dependencies": {
-    "@phoenixaihub/security-scanner-core": "*"
+    "@ai-security-scanner/core": "*"
   },
   "devDependencies": {
     "@types/node": "^20.19.39",
