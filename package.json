@@ -1,24 +1,40 @@
 {
-  "name": "ai-security-scanner",
-  "private": true,
-  "type": "module",
-  "workspaces": [
-    "packages/core",
-    "packages/cli",
-    "packages/vscode-extension"
-  ],
+  "name": "@phoenixaihub/ai-security-scanner",
+  "version": "1.0.0",
+  "description": "Scan codebases for AI-specific security vulnerabilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ai-sec": "dist/cli.js"
+  },
   "scripts": {
-    "build": "turbo build",
-    "lint": "turbo lint",
-    "test": "turbo test",
-    "clean": "turbo clean"
+    "build": "tsc",
+    "test": "jest --forceExit",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["ai", "security", "scanner", "prompt-injection", "llm", "sarif"],
+  "author": "PhoenixAI Hub",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/ai-security-scanner.git"
+  },
+  "dependencies": {
+    "glob": "^10.3.10",
+    "js-yaml": "^4.1.0",
+    "commander": "^12.0.0"
   },
   "devDependencies": {
-    "turbo": "^2.4.0",
-    "typescript": "^5.7.0"
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3",
+    "@types/jest": "^29.5.11"
   },
-  "engines": {
-    "node": ">=20"
-  },
-  "packageManager": "npm@10.0.0"
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
 }
